@@ -43,6 +43,19 @@ public class Planet
 		return massKg;
 	}
 	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setMassKg(float massKg) {
+		this.massKg = massKg;
+	}
+	
+	@Override
+	public String toString() {
+		return name + ":" + massKg;
+	}
+	
 	public static float getLargest(Planet[] planets) {
 		
 		return 0.0f;//need to make it a float not a double
@@ -53,6 +66,7 @@ public class Planet
 		Planet mercury = new Planet("Mercury", 0.33f * MASS_UNIT);
 		mercury.setName("Venus");
 		System.out.println(mercury.getName());
+		System.out.println(mercury.toString());
 	}
 	
 	
