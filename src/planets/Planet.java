@@ -35,6 +35,14 @@ public class Planet
 		return THE_PLANETS;
 	}
 	
+	public String getName() {
+		return name;
+	}
+	
+	public float getMassKg() {
+		return massKg;
+	}
+	
 	public static float getLargest(Planet[] planets) {
 		
 		return 0.0f;//need to make it a float not a double
