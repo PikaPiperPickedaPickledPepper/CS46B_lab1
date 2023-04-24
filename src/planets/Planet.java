@@ -58,7 +58,15 @@ public class Planet
 	
 	public static float getLargest(Planet[] planets) {
 		
-		return 0.0f;//need to make it a float not a double
+		float max = Float.MIN_VALUE;
+		
+		for (int i = 0; i < planets.length; i ++) {
+			if (planets[i].getMassKg() > max) {
+				max = planets[i].getMassKg();
+			}
+		}
+		
+		return max;//need to make it a float not a double
 		
 	}
 	
@@ -67,6 +75,9 @@ public class Planet
 		mercury.setName("Venus");
 		System.out.println(mercury.getName());
 		System.out.println(mercury.toString());
+		
+		Planet[] planets = getAll();
+		System.out.println(getLargest(planets));
 	}
 	
 	
