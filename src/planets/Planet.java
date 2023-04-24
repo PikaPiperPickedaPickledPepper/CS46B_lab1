@@ -67,7 +67,6 @@ public class Planet
 		}
 		
 		return max;//need to make it a float not a double
-		
 	}
 	
 	public static void main(String[] args) {

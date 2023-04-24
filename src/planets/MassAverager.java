@@ -29,9 +29,6 @@ public class MassAverager
 	public static void main(String[] args)
 	{
 		MassAverager averager = new MassAverager();
-		System.out.println(averager.getMeanPlanetaryMass());
-		
-		
-		
+		System.out.println(averager.getMeanPlanetaryMass());	
 	}
 }
